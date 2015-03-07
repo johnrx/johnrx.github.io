@@ -1,4 +1,0 @@
-username.github.io
-==================
-
-Blog
