@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Point Taken</title><link>http://johnrx.github.io/</link><description></description><atom:link href="http://johnrx.github.io/feeds/jonathan-rioux.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 03 Dec 2010 10:20:00 -0500</lastBuildDate><item><title>My super title</title><link>http://johnrx.github.io/posts/2010/Dec/03/my-super-post/index.html</link><description>&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;trois&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nb"&gt;format&lt;/span&gt; &lt;span class="no"&gt;nil&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;trois~%&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonathan Rioux</dc:creator><pubDate>Fri, 03 Dec 2010 10:20:00 -0500</pubDate><guid>tag:johnrx.github.io,2010-12-03:posts/2010/Dec/03/my-super-post/index.html</guid><category>thats</category><category>awesome</category></item></channel></rss>

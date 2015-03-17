@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Point Taken</title><link href="http://johnrx.github.io/" rel="alternate"></link><link href="http://johnrx.github.io/feeds/jonathan-rioux.atom.xml" rel="self"></link><id>http://johnrx.github.io/</id><updated>2010-12-03T10:20:00-05:00</updated><entry><title>My super title</title><link href="http://johnrx.github.io/posts/2010/Dec/03/my-super-post/index.html" rel="alternate"></link><updated>2010-12-03T10:20:00-05:00</updated><author><name>Jonathan Rioux</name></author><id>tag:johnrx.github.io,2010-12-03:posts/2010/Dec/03/my-super-post/index.html</id><summary type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;trois&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nb"&gt;format&lt;/span&gt; &lt;span class="no"&gt;nil&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;trois~%&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="thats"></category><category term="awesome"></category></entry></feed>
