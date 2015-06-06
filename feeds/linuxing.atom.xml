@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Technocrasse</title><link href="http://blog.raiks.ca/" rel="alternate"></link><link href="http://blog.raiks.ca/feeds/linuxing.atom.xml" rel="self"></link><id>http://blog.raiks.ca/</id><updated>2015-05-28T21:25:00-04:00</updated><entry><title>Fedora 22 : Premiers réflexes</title><link href="http://blog.raiks.ca/posts/2015/May/28/premieres-choses-fedora22/index.html" rel="alternate"></link><updated>2015-05-28T21:25:00-04:00</updated><author><name>Jonathan Rioux</name></author><id>tag:blog.raiks.ca,2015-05-28:posts/2015/May/28/premieres-choses-fedora22/index.html</id><summary type="html">&lt;h1&gt;Fedora 22 : premiers réflexes&lt;/h1&gt;
+&lt;p&gt;Fedora 22 est sorti un peu plus tôt cette semaine, soit le 26 mai 2015. Fidèle au linuxien dans le un peu daté (mais toujours hillarant) &lt;a href="http://www.stickycomics.com/computer-update/"&gt;sticky comics&lt;/a&gt;, j'y ai consacré la majorité de ma soirée de mardi à trouver une clé USB pour installer le système from scratch. Les critques sont majoritairement positives et plusieurs guides sont disponibles en ligne sur les premières choses à faire suite à l'installation.&lt;/p&gt;
+&lt;p&gt;Cependant, la majorité des tutoriels vus en ligne consistent surtout à aligner des commandes permettant d'installer des logiciels. Nous savons toutes et tous que VLC, Chrome, Gimp sont des ténors à installer rapidement, mais comment s'approprier GNOME et le rendre plus fonctionnel à partir d'un Fedora vanille? J'ai profité de la mise à jour pour rassembler les éléments qui me sont le plus utile, voire quasi-indispensable, du moment que je démarre sur mon ordinateur. La (longue) liste de programmes à installer suivra.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Notez que ces étapes ne sont pas nécessairement propres à Fedora. Il est totalement possible de les adapter pour Ubuntu Gnome (en utilisant &lt;code&gt;apt-get&lt;/code&gt;), ou a une autre distribution/environnement de bureau en fouillant un peu.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Étape 1 : Mettre à jour l'installation en utilisant &lt;code&gt;dnf&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Première surprise, &lt;code&gt;yum&lt;/code&gt;, le jusqu'à tout récemment gestionnaire de paquets pour Fedora, est en cours de remplacement pas &lt;code&gt;dnf&lt;/code&gt;. Il est toujours possible d'utiliser &lt;code&gt;yum&lt;/code&gt; pour installer ou mettre à jour des paquets. Dans la très grande majorité des cas, &lt;code&gt;dnf&lt;/code&gt; est complètement interchangeable et me semble plus rapide. Profitons-en!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt; sudo dnf update -y
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Le &lt;code&gt;-y&lt;/code&gt; signifie que l'on répond&lt;/em&gt; oui &lt;em&gt;à toutes les questions.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Étape 2 : Installer une (petite) première vague de programmes&lt;/h2&gt;
+&lt;p&gt;Bon, ok, j'ai menti : quelques programmes sont en effet des &lt;em&gt;musts&lt;/em&gt; à installer.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://engla.github.io/kupfer/"&gt;Kupfer&lt;/a&gt;, un &lt;em&gt;launcher&lt;/em&gt; (des idées de traduction?) de programmes;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt;, un obligatoire!&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/linuxmint/nemo"&gt;Nemo&lt;/a&gt;, le gestionnaire de fichiers du projet Cinnamon;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.gnome.org/action/show/Apps/GnomeTweakTool?action=show&amp;amp;redirect=GnomeTweakTool"&gt;Gnome-tweak-tool&lt;/a&gt;, un couteau-suisse permettant de personnaliser GNOME.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kupfer&lt;/h3&gt;
+&lt;p&gt;Depuis quelques années, un &lt;em&gt;launcher&lt;/em&gt; est devenu une partie intégrante de ce qui rend mon environnement confortable. Je le met sur un raccourci clavier facile à atteindre (Ctrl+Esc, dans mon cas), tape quelques caractères, trouve le programme à lancer et hop! Moins de souris, plus de rapidité, en peu de temps, il devient un indispensable.&lt;/p&gt;
+&lt;h3&gt;Emacs&lt;/h3&gt;
+&lt;p&gt;Emacs a été pourquoi je me suis sérieusement intéressé à la programmation. Il suffit de voir un habitué littéralement produire un torrent de texte et le manipuler à une vitesse incroyable pour avoir envie de l'apprendre. Pourquoi pas maintenant?&lt;/p&gt;
+&lt;h3&gt;Nemo&lt;/h3&gt;
+&lt;p&gt;Il y a quelques années, GNOME, en faisant la migration vers sa version 3, a enlevé plusieurs fonctionnalités intéressantes de son gestionnaire de fichiers, Nautilus. Parallèlement, Nemo, issu du projet Cinnamon (un environnement de bureau concurrent) s'est inspiré de Nautilus pré-nettoyage et l'a fait évoluer.&lt;/p&gt;
+&lt;p&gt;Les dernières versions de Nautilus semblent cependant s'être améliorées. Je réévaluerai prochainement.&lt;/p&gt;
+&lt;h3&gt;Gnome-tweak-tool&lt;/h3&gt;
+&lt;p&gt;GNOME se démarque de la majorité des autres enviromment de bureau disponibles sur Linux par sa simplicité : plusieurs choix ont été faits pour vous. Comme tout bon linuxien, je suis en désaccord avec certains...&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Enter gnome-tweak-tool&lt;/em&gt;. En un seul programme, vous pouvez changer les polices de caractère par défaut, changer le thème des fenêtres (de gris clair (&lt;em&gt;light&lt;/em&gt;) à gris foncé (&lt;em&gt;dark&lt;/em&gt;), gérer des extensions (&lt;em&gt;more on this later&lt;/em&gt;) et j'en passe. Pour les nostalgiques de GNOME 2 et sa grande configurabilité, cela peut aider...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt; sudo dnf install kupfer emacs nemo gnome-tweak-tool -y
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Étape 3 : Aller chercher des extensions&lt;/h2&gt;
+&lt;p&gt;GNOME 3 est scriptable en javascript. Cela signifie qu'un bon nombre d'extensions sont déjà disponibles pour améliorer l'expérience par défaut. Pas content d'un élément? Faites une extension!&lt;/p&gt;
+&lt;p&gt;Les extensions vérifiées sont disponibles à l'adresse &lt;a href="https://extensions.gnome.org/"&gt;https://extensions.gnome.org/&lt;/a&gt;. Autorisez "Gnome Shell Integration" sur le site et il suffira d'actionner un interrupteur pour que l'extension soit disponible sur votre système.&lt;/p&gt;
+&lt;h3&gt;Drop down terminal&lt;/h3&gt;
+&lt;p&gt;Malgré un plus grand focus sur l'interaction entre l'utilisateur et l'environnement, plusieurs opérations restent plus facile à faire en ligne de commande. Cette extension permet d'avoir un terminal qui "tombe" littéralement du haut de l'écran à la pression d'un bouton (j'utilise personnellement [F12]).&lt;/p&gt;
+&lt;h3&gt;Shellshape&lt;/h3&gt;
+&lt;p&gt;Ok. Cette extension est difficile à expliquer et pourtant elle reste probablement celle qui m'a convaincu de rester sur GNOME 3.&lt;/p&gt;
+&lt;p&gt;Shellshape permet d'organiser les fenêtres à la manière d'un gestionnaire de fenêtres par tuiles (&lt;em&gt;tiling window manager&lt;/em&gt;), comme &lt;a href="http://xmonad.org/"&gt;xmonad&lt;/a&gt; ou &lt;a href="http://awesome.naquadah.org/"&gt;awesome&lt;/a&gt;. Ayant utilisé xmonad pendant un peu plus d'un an, cette façon d'organiser mes fenêtres me manquait beaucoup. Une fois activée, plusieurs raccourcis claviers nous permettent d'organiser les fenêtres horizontalement ou verticalement. Ces deux modes sont souvent suffisant pour la plupart des utilisations.&lt;/p&gt;
+&lt;p&gt;Avant d'activer Shellshape, nous devons changer deux raccourcis claviers qui interfèrent : &lt;em&gt;Settings -&gt; Keyboard -&gt; Shortcuts&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;win+h&lt;/code&gt; : Hide Window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;win+l&lt;/code&gt; : Lock screen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour ma part, je les laisse à &lt;em&gt;Undefined&lt;/em&gt; (en appuyant sur Backspace) puisqu'ils ne me servent à rien. Pour le reste des raccourcis, &lt;a href="http://gfxmonk.net/shellshape/"&gt;le site officiel de l'extension&lt;/a&gt; est un obligatoire.&lt;/p&gt;
+&lt;h3&gt;Caffeine&lt;/h3&gt;
+&lt;p&gt;Cette extension permet d'empêcher l'écran de veille de s'activer. Pratique.&lt;/p&gt;
+&lt;h3&gt;Window navigator&lt;/h3&gt;
+&lt;p&gt;Cette extension est utile lorsqu'on utilise la fonction &lt;em&gt;overview&lt;/em&gt;. Elle permet de sélectionner les fenêtre en appuyant sur Alt+ le numéro de la fenêtre (ceux-ci s'affichent lorsqu'on appuie sur Alt). On peut également changer d'espace (&lt;em&gt;workspace&lt;/em&gt;) en utilisant la touche Ctrl.&lt;/p&gt;
+&lt;h3&gt;Alt Tab Workspace&lt;/h3&gt;
+&lt;p&gt;Un des éléments énervants de GNOME est que le cycle des fenêtres est consolidé pour tous les espaces. Comme j'organise chacun de mes espace en fonction d'une tâche précise, configurer alt-tab de sorte que le cycle soit unique pour chaque espace m'apparait plus logique.&lt;/p&gt;
+&lt;h2&gt;Étape 4 : Activer RPM Fusion&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://rpmfusion.org/"&gt;RPM Fusion&lt;/a&gt; permet d'ajouter les logiciels que Fedora ne peut/veut pas offrir dans ses dépôts officiels, par exemple VLC ou les codecs MP3, plutôt commodes. Pour les obtenir, il suffit de suite la procédure sur leur site internet.&lt;/p&gt;
+&lt;p&gt;Fedora offre déjà une expérience Linux très polie. En prenant le temps d'explorer les options de configuration, il est possible de se créer un environnement de bureau efficace, rapide et confortable. Bien que la pléthore d'options puisse être intimidante, rien n'oblige à y aller pleine vitesse dès le départ : commencez par l'expérience par défaut, puis ~~pour procrastiner~~ à temps perdu, fouillez pour ajouter quelques éléments ça et là. En peu de temps, vous aurez un Linux bien à vous!&lt;/p&gt;</summary><category term="Fedora"></category><category term="Linux"></category></entry></feed>
