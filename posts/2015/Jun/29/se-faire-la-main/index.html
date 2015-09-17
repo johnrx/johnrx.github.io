@@ -1,224 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Jonathan" />
-        <meta name="keywords" content="Programmation,Apprentissage" />
-        <meta name="description" content="Comment apprendre un nouveau langage sans recommencer au &#34;Hello, world.&#34; ?" />
+          <title>Technocrasse</title>
+        <meta charset="utf-8" />
+        <link href="http://blog.raiks.ca/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Technocrasse Full Atom Feed" />
+        <link href="http://blog.raiks.ca/feeds/progue.atom.xml" type="application/atom+xml" rel="alternate" title="Technocrasse Categories Atom Feed" />
 
-    <title>Se faire la main - Technocrasse</title>
 
-    <link rel="stylesheet" href="http://blog.raiks.ca/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://blog.raiks.ca/theme/css/font-awesome.min.css" rel="stylesheet">
-    
-    <link href="http://blog.raiks.ca/theme/css/pygments/native.css" rel="stylesheet">
-    
-    <link href="http://blog.raiks.ca/theme/css/pelican-twitchy.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <!-- Feeds -->
-        <link href="http://blog.raiks.ca/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Technocrasse ATOM Feed"/>
+    <meta name="tags" content="Programmation" />
+    <meta name="tags" content="Apprentissage" />
+
 </head>
-<body data-spy="scroll" data-target="#scrollspy">
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper-small" class="twitchy-background">
-            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
-                <li>
-        <a href="http://blog.raiks.ca" title="Technocrasse" class="collapsed">
-            <span class="glyphicon glyphicon-home"></span>
-        </a>
-    </li>
-                <li class="nav-divider"></li>
-                <li>
-        <a href="http://blog.raiks.ca/archives.html" title="Recent Articles" class="collapsed">
-            <span class="glyphicon glyphicon-th-list"></span>
-        </a>
-    </li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
-                        <i class="fa fa-users padding-small"></i>
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
-                    <li>
-                        <a href="http://blog.raiks.ca/pages/CV.html" title="CV"><i class="fa fa-cv-square fa-lg padding-small"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jonesberg" title="Github"><i class="fa fa-github-square fa-lg padding-small"></i></a>
-                    </li>
-                    <li>
-                        <a href="http://ca.linkedin.com/in/jonathanrx/" title="LinkedIn"><i class="fa fa-linkedin-square fa-lg padding-small"></i></a>
-                    </li>
-                </ul></li>
-                <li class="nav-divider"></li>
-                <li>
-        <a href="#" title="Back to top" class="collapsed">
-            <span class="fa fa-arrow-up"></span>
-        </a>
-    </li>
-            </ul>
-        </div>
-        <div id="sidebar-wrapper" class="twitchy-background">
-            <ul id="accordion" class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="http://blog.raiks.ca/">
-                            <span class="glyphicon glyphicon-home padding-small"></span>
-                            Technocrasse
-                    </a>
-                </li>
-                    <li class="nav-divider"></li>
-                    <li>
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-latest">
-                            <span class="glyphicon glyphicon-th-list padding-small"></span>
-                            Recent Articles
-                        </a>
-                    </li>
-                    <li class="panel anti-panel"><ul id="collapse-latest" class="sidebar_submenu collapse in">
-                        <li class="active">
-                            <a class="hide-overflow" href="http://blog.raiks.ca/posts/2015/Jun/29/se-faire-la-main/index.html" title="Se faire la main">
-                                <i class="fa fa-file-text padding-small"></i>
-                                Se faire la main
-                            </a>
-                        </li>
-                        <li class="">
-                            <a class="hide-overflow" href="http://blog.raiks.ca/posts/2015/May/28/premieres-choses-fedora22/index.html" title="Fedora 22 : Premiers réflexes">
-                                <i class="fa fa-file-text padding-small"></i>
-                                Fedora 22 : Premiers réflexes
-                            </a>
-                        </li>
-                        <li class="">
-                            <a class="hide-overflow" href="http://blog.raiks.ca/posts/2015/May/25/premier-article/index.html" title="Premier article">
-                                <i class="fa fa-file-text padding-small"></i>
-                                Premier article
-                            </a>
-                        </li>
-                    <li>
-                        <a href="http://blog.raiks.ca/archives.html">
-                            <i class="fa fa-arrow-right padding-small"></i>
-                            More
-                        </a>
-                    </li>
-                    </ul></li>
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
-                        <i class="fa fa-users padding-small"></i>
-                        Contact
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
-                    <li>
-                        <a href="http://blog.raiks.ca/pages/CV.html" title="CV">
-                            <i class="fa fa-cv-square fa-lg padding-small"></i>
-                            CV
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jonesberg" title="Github">
-                            <i class="fa fa-github-square fa-lg padding-small"></i>
-                            Github
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://ca.linkedin.com/in/jonathanrx/" title="LinkedIn">
-                            <i class="fa fa-linkedin-square fa-lg padding-small"></i>
-                            LinkedIn
-                        </a>
-                    </li>
-                </ul></li>
-                
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
-                        <i class="fa fa-folder-open padding-small"></i>
-                        Categories
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li >
-                        <a href="http://blog.raiks.ca/category/general.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            Général
-                            <span class="badge pull-right categorybadge">1</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="http://blog.raiks.ca/category/linuxing.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            Linuxing
-                            <span class="badge pull-right categorybadge">1</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="http://blog.raiks.ca/category/progue.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            Progue
-                            <span class="badge pull-right categorybadge">1</span>
-                        </a>
-                    </li>
-                </ul></li>
-                
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- open/close sidebar -->
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
-            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
-        </a>
-       <!-- /open/close sidebar -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-<section id="content">
-    <article>
-        <div class="row">
-            <div class="col-lg-9">
-                <header class="page-header">
-                    <h1>
-                        <a href="http://blog.raiks.ca/posts/2015/Jun/29/se-faire-la-main/index.html"
-                           rel="bookmark"
-                           title="Permalink to Se faire la main">
-                            Se faire la main
-                        </a>
-                        <small>
-<div class="post-info">
-    <div class="publish-info-block">
-        <small>
-            <span class="published">
-                <i class="fa fa-calendar padding-small"></i><time datetime="2015-06-29T20:24:00-04:00"> Mon 29 June 2015</time>
-            </span>
-            <span class="category">
-                <i class="fa fa-folder-open padding-small"></i><a href="http://blog.raiks.ca/category/progue.html">Progue</a>
-            </span>
-            <span class="tags">
-                <i class="fa fa-tags padding-small"></i>
-                <a href="http://blog.raiks.ca/tag/programmation.html">Programmation</a> /                 <a href="http://blog.raiks.ca/tag/apprentissage.html">Apprentissage</a>            </span>
-        </small>
-    </div>
-</div><!-- /.post-info -->                        </small>
-                    </h1>
-                </header>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="entry-content">
-                    <p>Lors de l'apprentissage d'un nouveau langage de programmation, il y a toujours une phase plutôt inconfortable à passer : d'une part, on ne se sent pas toujours prêt à entammer un projet substantiel, mais on ne souhaite pas répéter les même petits problèmes que l'on sert <em>ad nauseam</em>. C'est souvent à ce moment où je laisse tomber l'apprentissage, préférant m'élire un nouveau langage du jour ou de retomber dans mes vieilles pantouffles.</p>
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://blog.raiks.ca/">Technocrasse <strong></strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+              <li><a href="http://blog.raiks.ca/category/general.html">Général</a></li>
+              <li><a href="http://blog.raiks.ca/category/linuxing.html">Linuxing</a></li>
+              <li class="active"><a href="http://blog.raiks.ca/category/progue.html">Progue</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://blog.raiks.ca/posts/2015/Jun/29/se-faire-la-main/index.html" rel="bookmark"
+         title="Permalink to Se faire la main">Se faire la main</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2015-06-29T20:24:00-04:00">
+      Mon 29 June 2015
+    </abbr>
+    <address class="vcard author">
+      By           <a class="url fn" href="http://blog.raiks.ca/author/jonathan.html">Jonathan</a>
+    </address>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>Lors de l'apprentissage d'un nouveau langage de programmation, il y a toujours une phase plutôt inconfortable à passer : d'une part, on ne se sent pas toujours prêt à entammer un projet substantiel, mais on ne souhaite pas répéter les même petits problèmes que l'on sert <em>ad nauseam</em>. C'est souvent à ce moment où je laisse tomber l'apprentissage, préférant m'élire un nouveau langage du jour ou de retomber dans mes vieilles pantouffles.</p>
 <p>Visiblement, je ne suis pas seul dans cette situation, puisque plusieurs ressources en ligne se sont penché sur le problème. Malgré un tour d'horizon plutôt rapide, en voici quelques uns qui font partie de mon arsenal hebdomadaire :</p>
 <h2 id="le-classique-project-euler">Le classique : <a href="https://projecteuler.net/">Project Euler</a></h2>
 <p>Impossible de le passer sous silence. Un ténor en la matière, malgré son approche quelque peu différente. Le but ici est de résoudre un problème -- souvent à teneur mathématique -- en utilisant le langage de programmation de son choix. Les mathophobes peuvent se rassurer, la plupart des problèmes faisant surtout appel a une bonne curiosité et à de bonnes aptitudes en recherche.</p>
@@ -234,71 +54,13 @@
 <p>Au delà du langage en soi, cette approche permet également de se familiariser avec l'écosystème entier qui accompagne : souvent, l'organisation du code est déjà (semi-)spécifiée et il s'agit d'un bon exercice de s'y frotter avec un projet de plus petite envergure. On se crée un <em>repository</em> github et on se lance.</p>
 <p>Je reste toujours curieux de voir d'autres approches pour se familiariser avec un nouveau langage de programmation. Au besoin, je metterai à jour ce post ou en ferai une deuxième édition!</p>
 
-                </div>
-                <footer class="text-right">
-                    <p>- Jonathan</p>
-                </footer>
-    <section id="comments" class="comments ">
-        <hr/>
-        <h2>Comments</h2>
-        <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </section>
-            </div>
-        </div>
-    </article>
+  </div><!-- /.entry-content -->
 </section>
-            </div>
-<footer>
-    <div class="container-fluid">
-        <hr>
-        <div class="row">
-            <div class="col-xs-3 text-left">
-                <small>La technologie au service de tous. Ou l'inverse. Quelque chose du genre.</small>
-            </div>
-            <div class="col-xs-6 text-right">
-                <p><small>Built using <a href="http://docs.getpelican.com/en/latest">Pelican</a>, <a href="http://getbootstrap.com">Bootstrap3</a> and the <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a> theme.</small></p>
-            </div>
-        </div>
-        <div class="row" id="footer_license">
-            <div class="col-xs-9 text-center">                <p><small><p>&copy; 2015 Technocrasse</p></small></p>
-            </div>
-        </div>
-    </div>
-</footer>        </div>
-        <!-- /#page-content-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-    <!-- jQuery Version 1.11.2 -->
-    <script src="http://blog.raiks.ca/theme/js/jquery-1.11.2.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="http://blog.raiks.ca/theme/js/bootstrap.min.js"></script>
-    <!-- twitchy Script -->
-    <script src="http://blog.raiks.ca/theme/js/pelican_twitchy.min.js"></script>
-
-
-<!-- disqus -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'technocrasse'; // required: replace example with your forum shortname
-
-            var disqus_identifier = 'se-faire-la-main';
-        var disqus_url = 'http://blog.raiks.ca/posts/2015/Jun/29/se-faire-la-main/index.html';
-
-    var disqus_config = function () {
-        this.language = "fr";
-    };
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-
-<!-- /disqus --></body>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
 </html>
