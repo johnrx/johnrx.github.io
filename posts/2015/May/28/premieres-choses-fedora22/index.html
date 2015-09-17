@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-          <title>Technocrasse</title>
-        <meta charset="utf-8" />
-        <link href="http://blog.raiks.ca/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Technocrasse Full Atom Feed" />
-        <link href="http://blog.raiks.ca/feeds/linuxing.atom.xml" type="application/atom+xml" rel="alternate" title="Technocrasse Categories Atom Feed" />
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="http://blog.raiks.ca/posts/2015/May/28/premieres-choses-fedora22/index.html" />
+
+    <title>  Technocrasse &mdash; Fedora 22 : Premiers réflexes
+</title>
 
 
 
-    <meta name="tags" content="Fedora" />
-    <meta name="tags" content="Linux" />
 
+    <link rel="stylesheet" href="http://blog.raiks.ca/theme/css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <meta name="author" content="Jonathan Rioux">
+    <meta name="description" content="Fedora 22 est sorti un peu plus tôt cette semaine. Comment (rapidement) s'en sortir?">
+  <meta name="tags" contents="Fedora, Linux, ">
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.raiks.ca/">Technocrasse <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-              <li><a href="http://blog.raiks.ca/category/general.html">Général</a></li>
-              <li class="active"><a href="http://blog.raiks.ca/category/linuxing.html">Linuxing</a></li>
-              <li><a href="http://blog.raiks.ca/category/progue.html">Progue</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="http://blog.raiks.ca/posts/2015/May/28/premieres-choses-fedora22/index.html" rel="bookmark"
-         title="Permalink to Fedora 22 : Premiers réflexes">Fedora 22 : Premiers réflexes</a></h2>
- 
-  </header>
-  <footer class="post-info">
-    <abbr class="published" title="2015-05-28T21:25:00-04:00">
-      Thu 28 May 2015
-    </abbr>
-    <address class="vcard author">
-      By           <a class="url fn" href="http://blog.raiks.ca/author/jonathan-rioux.html">Jonathan Rioux</a>
-    </address>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
-    <h1 id="fedora-22-premiers-réflexes">Fedora 22 : premiers réflexes</h1>
-<p>Fedora 22 est sorti un peu plus tôt cette semaine, soit le 26 mai 2015. Fidèle au linuxien dans le un peu daté (mais toujours hillarant) <a href="http://www.stickycomics.com/computer-update/">sticky comics</a>, j'y ai consacré la majorité de ma soirée de mardi à trouver une clé USB pour installer le système from scratch. Les critques sont majoritairement positives et plusieurs guides sont disponibles en ligne sur les premières choses à faire suite à l'installation.</p>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <h1 class="header-name">
+        <a class="nodec" href="http://blog.raiks.ca">Technocrasse</a>
+      </h1>
+      <h3 class="header-text">La technologie au service de tous. Ou l'inverse. Quelque chose du genre.</h3>
+      <ul class="header-menu list-inline">
+          <li><a class="nodec icon-mail-alt" href="mailto:jonathan@raiks.ca"></a></li>
+          <li><a class="nodec icon-github" href="https://github.com/jonesberg/"></a></li>
+      </ul>
+    </div>
+  </div>
+</header> <!-- /.header -->  <div class="container">
+  <div class="post full-post">
+    <h1 class="post-title">
+      <a href="/posts/2015/May/28/premieres-choses-fedora22/index.html" title="Permalink to Fedora 22 : Premiers réflexes">Fedora 22 : Premiers réflexes</a>
+    </h1>
+    <ul class="list-inline">
+      <li class="post-date">
+        <a class="text-muted" href="/posts/2015/May/28/premieres-choses-fedora22/index.html" title="2015-05-28T21:25:00-04:00">Thu 28 May 2015</a>
+      </li>
+      <li class="muted">&middot;</li>
+      <li class="post-category">
+        <a href="http://blog.raiks.ca/category/linuxing.html">Linuxing</a>
+      </li>
+        <li class="muted">&middot;</li>
+        <li>
+            <a href="/tag/Fedora.html">Fedora</a>,             <a href="/tag/Linux.html">Linux</a>        </li>
+    </ul>
+    <div class="post-content">
+      <p>Fedora 22 est sorti un peu plus tôt cette semaine, soit le 26 mai 2015. Fidèle au linuxien dans le un peu daté (mais toujours hillarant) <a href="http://www.stickycomics.com/computer-update/">sticky comics</a>, j'y ai consacré la majorité de ma soirée de mardi à trouver une clé USB pour installer le système from scratch. Les critques sont majoritairement positives et plusieurs guides sont disponibles en ligne sur les premières choses à faire suite à l'installation.</p>
 <p>Cependant, la majorité des tutoriels vus en ligne consistent surtout à aligner des commandes permettant d'installer des logiciels. Nous savons toutes et tous que VLC, Chrome, Gimp sont des ténors à installer rapidement, mais comment s'approprier GNOME et le rendre plus fonctionnel à partir d'un Fedora vanille? J'ai profité de la mise à jour pour rassembler les éléments qui me sont le plus utile, voire quasi-indispensable, du moment que je démarre sur mon ordinateur. La (longue) liste de programmes à installer suivra.</p>
 <p><em>Notez que ces étapes ne sont pas nécessairement propres à Fedora. Il est totalement possible de les adapter pour Ubuntu Gnome (en utilisant <code>apt-get</code>), ou a une autre distribution/environnement de bureau en fouillant un peu.</em></p>
 <h2 id="étape-1-mettre-à-jour-linstallation-en-utilisant-dnf">Étape 1 : Mettre à jour l'installation en utilisant <code>dnf</code></h2>
@@ -89,13 +108,46 @@
 <p><a href="http://rpmfusion.org/">RPM Fusion</a> permet d'ajouter les logiciels que Fedora ne peut/veut pas offrir dans ses dépôts officiels, par exemple VLC ou les codecs MP3, plutôt commodes. Pour les obtenir, il suffit de suite la procédure sur leur site internet.</p>
 <p>Fedora offre déjà une expérience Linux très polie. En prenant le temps d'explorer les options de configuration, il est possible de se créer un environnement de bureau efficace, rapide et confortable. Bien que la pléthore d'options puisse être intimidante, rien n'oblige à y aller pleine vitesse dès le départ : commencez par l'expérience par défaut, puis <del>pour procrastiner</del> à temps perdu, fouillez pour ajouter quelques éléments ça et là. En peu de temps, vous aurez un Linux bien à vous!</p>
 
-  </div><!-- /.entry-content -->
-</section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
-</body>
+    </div>
+  </div>
+  <hr class="separator">
+  <div class="col-md-8 col-md-offset-2">
+  <div id="disqus_thread">
+    <script>
+      var disqus_shortname = 'technocrasse';
+      (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] ||
+         document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript=technocrasse">
+        comments powered by Disqus.
+      </a>
+    </noscript>
+    <a href="https://disqus.com" class="dsq-brlink">
+      blog comments powered by <span class="logo-disqus">Disqus</span>
+    </a>
+  </div>
+  </div>
+  </div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-center">
+      Jonathan Rioux, <a href="" target="_blank"></a> unless otherwise noted.
+    </p>
+    <div class="text-center">
+      Generated by <a href="http://getpelican.com" target="_blank">Pelican</a> with the <a href="http://github.com/nairobilug/pelican-alchemy">alchemy</a> theme.
+    </div>
+  </div>
+</footer> <!-- /.footer -->
+  <script src="http://blog.raiks.ca/theme/js/jquery.min.js"></script>
+  <script src="http://blog.raiks.ca/theme/js/bootstrap.min.js"></script>
+</body> <!-- 42 -->
+
 </html>
